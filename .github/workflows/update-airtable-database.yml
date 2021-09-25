@@ -1,0 +1,29 @@
+name: update-airtable-database
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 23 * * *' # runs at 00:00 UTC everyday
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9.5' # install the python version needed
+          
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: execute py script # run UpdateAirtableDatabase.py to get the latest plugins into Airtable
+        env: 
+          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
+        run: python UpdateAirtableDatabase.py
