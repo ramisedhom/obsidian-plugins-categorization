@@ -8,6 +8,9 @@ https://discord.com/channels/686053708261228577/888107495233568778
 
 # Import python libraries
 
+## For environment variables
+import os
+
 ## For Airtable API
 from pyairtable import Table
 
@@ -25,7 +28,7 @@ __status__ = "Development"
 
 # Set Airtable API key and database ID
 
-api_key = 'put_your_api_key_here'
+api_key = os.environ.get["AIRTABLE_API_KEY"]
 base_id = 'appyfMsHdYxRsHPoX'
 
 
