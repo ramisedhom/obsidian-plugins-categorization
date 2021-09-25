@@ -1,6 +1,7 @@
 name: export-airtable-to-github-markdown
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * *' # runs at 00:00 UTC everyday
 
