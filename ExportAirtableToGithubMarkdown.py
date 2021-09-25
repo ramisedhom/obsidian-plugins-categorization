@@ -28,7 +28,7 @@ __status__ = "Development"
 
 # Set Airtable API key and database ID
 
-api_key = os.environ.get["AIRTABLE_API_KEY"]
+api_key = os.environ.get('AIRTABLE_API_KEY')
 base_id = 'appyfMsHdYxRsHPoX'
 
 
