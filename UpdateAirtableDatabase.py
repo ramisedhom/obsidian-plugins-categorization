@@ -8,6 +8,9 @@ Check: https://forum.obsidian.md/t/13565
 
 # Import python libraries
 
+## For environment variables
+import os
+
 ## For Airtable API
 from pyairtable import Table
 
@@ -31,7 +34,7 @@ __status__ = "Development"
 
 # Get plugins information from Airtable database
 
-api_key = 'put_your_api_key_here'
+api_key = os.environ.get('AIRTABLE_API_KEY')
 base_id = 'appyfMsHdYxRsHPoX'
 table_name = 'Plugins Categorized'
 obsidian_airtable_plugins = Table(api_key, base_id, table_name)
@@ -78,10 +81,6 @@ df_community['source']='community'
 # on columns: 'name','description','repo'; keeping community records only
 df_diff = pd.concat([df_airtable,df_community]).drop_duplicates(subset=['name','description','repo'],keep=False)
 df_diff = df_diff[df_diff['source'] == 'community']
-
-
-# Export differences to Excel
-df_diff.to_excel("diff.xlsx")
 
 
 # Update Airtable with differences
