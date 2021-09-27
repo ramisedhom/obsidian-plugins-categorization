@@ -33,7 +33,9 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git commit -m "Update markdown file with latest plugins" -a
+          # To avoid Error: nothing to commit
+          # see: https://stackoverflow.com/a/8123841/1631159
+          git diff-index --quiet HEAD || git commit -m "Update markdown file with latest plugins" -a
 
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
