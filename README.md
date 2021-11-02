@@ -51,7 +51,9 @@ There are several ways to contribute here, either by:
 
 ## Note
 
-This effort requires me to go continuously through 300+ plugins, as of today, and categorize them. Also to write scripts to update it daily and export them again in readable friendly markdown format.
+This effort reuired me to write scripts that update the database on daily bases and export them in readable friendly markdown format.
+It also requires me to go continuously through the new plugins and categorize them manually every now and then.
+
 This is provided to everyone for free, however if you would like to say thanks or help support continued effort, feel free to send a little my way through one of the following methods:
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I36CJAV)
