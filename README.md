@@ -51,7 +51,7 @@ There are several ways to contribute here, either by:
 
 ## Note
 
-This effort reuired me to write scripts that update the database on daily bases and export them in readable friendly markdown format.
+This effort required me to write python scripts that are updating the database on daily bases, and export them in readable friendly markdown format.
 It also requires me to go continuously through the new plugins and categorize them manually every now and then.
 
 This is provided to everyone for free, however if you would like to say thanks or help support continued effort, feel free to send a little my way through one of the following methods:
