@@ -60,7 +60,7 @@ df_community = pd.json_normalize(obsidian_community_plugins)
 
 ## Drop unnecessary columns
 df_airtable.drop(columns=['id', 'createdTime'], inplace=True)
-df_community.drop(columns=['author', 'branch'], inplace=True)
+df_community.drop(columns=['author'], inplace=True)
 
 ## Rename Airtable data frame columns to be the same as df_community column names
 df_airtable.rename(columns={'fields.Name': 'name', 'fields.Description': 'description', 'fields.Github Link': 'repo', 'fields.ID': 'id'}, inplace=True)
