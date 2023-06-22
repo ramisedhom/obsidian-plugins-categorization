@@ -1,12 +1,5 @@
-# Python script dependencies, for example:
-# package>=version
-# check [the format for the requirements.txt](https://pip.pypa.io/en/stable/cli/pip_install/#requirements-file-format)
+# For Seatable API
+seatable_api
 
-## For Airtable API
-pyairtable==1.5.0
-
-## Pandas library for data comparison, convert and export
-pandas==1.5.3
-
-## Tabulate library to be used in export table
-tabulate==0.9.0
+# Pandas library for data comparison, convert and export
+pandas

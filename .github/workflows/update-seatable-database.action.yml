@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: execute py script # run UpdateAirtableDatabase.py to get the latest plugins into Airtable
+      - name: execute py script # run update-seatable-database.py to get the latest plugins into Seatable
         env: 
-          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
-        run: python UpdateAirtableDatabase.py
+          SEATABLE_API_TOKEN: ${{ secrets.SEATABLE_API_TOKEN }}
+        run: python update-seatable-database.py
