@@ -13,8 +13,7 @@ My main purpose behind this effort is to help myself and others to find the prop
 ## Structure
 
 There is 1 python scripts in this repository:
-
-- update-seatable-database.py: Update Seatable database automatically with new and updated plugins,
+  - update-seatable-database.py: Update Seatable database automatically with new and updated plugins,
 
 This script is running daily through Githab Actions to update plugins list automatically. 
 
@@ -34,12 +33,11 @@ Thanks to [Argentina Ortega Sáinz](https://github.com/argenos), this effort had
 ## Contribution
 
 There are several ways to contribute here, either by:
-
-- Review, update and improve categorization on [Seatable database](https://cloud.seatable.io/dtable/links/eaf696faed944cbba838) or in [Obsidian Hub](https://publish.obsidian.md/hub/02+-+Community+plugins/02+-+Community+plugins),
-- Improve the python scripts shared here,
-- Suggest new features,
-- Create new scripts implementing one of the ideas in "Improvement Ideas",
-- Or may be buy me a coffee to keep me awake at midnight to continue maintaining and improving this project.
+  - Review, update and improve categorization on [Seatable database](https://cloud.seatable.io/dtable/links/  eaf696faed944cbba838) or in [Obsidian Hub](https://publish.obsidian.md/hub/02+-+Community+plugins/02+-+Community  +plugins),
+  - Improve the python scripts shared here,
+  - Suggest new features,
+  - Create new scripts implementing one of the ideas in "Improvement Ideas",
+  - Or may be buy me a coffee to keep me awake at midnight to continue maintaining and improving this project.
 
 ## Note
 
