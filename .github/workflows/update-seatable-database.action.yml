@@ -1,4 +1,4 @@
-name: update-airtable-database
+name: update-seatable-database
 
 on:
   workflow_dispatch:
