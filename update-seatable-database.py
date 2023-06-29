@@ -23,11 +23,11 @@ import pandas as pd
 ## Initialize connection to SeaTable
 server_url = 'https://cloud.seatable.io'
 api_token = os.environ.get('SEATABLE_API_TOKEN')
-table_name = 'Plugins Categorized'
+table_name = 'Plugins'
 base = Base(api_token, server_url)
 base.auth()
 
-## Get rows from 'Plugins Categorized' table
+## Get rows from 'Plugins' table
 lst_seatable = base.query('SELECT _id, ID, Name, Description, `Github Link` FROM `' + table_name + '` LIMIT 10000')
 
 ## Convert list to Pandas dataframe using json_normalize to flatten the list
